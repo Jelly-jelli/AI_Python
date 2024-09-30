@@ -1,0 +1,88 @@
+Conda Command : 
+
+# Create Environment
+conda create --name basic-scipy-env
+conda create --name python38-env python=3.8
+conda create --name machine-learning-39-env python=3.9
+
+# Activate Environment
+conda activate basic-scipy-env
+conda activate machine-learning-39-env 
+
+environment location: /opt/miniconda3/envs/python38-env
+conda activate python38-env 
+conda activate machine-learning-39-env
+
+
+# Terminate Environment 
+conda deactivate
+conda deactivate
+
+# Installing Packages
+conda activate basic-scipy-env
+conda install numba
+conda install scikit-learn=1.2
+
+# Search Sckit learn popular version
+conda search scikit-learn
+
+# Specific the version
+conda install ipython matplotlib=3.7 scipy=1.9
+
+# List env of Conda
+conda env list
+
+#Use the --freeze-installed option. 
+This may force Conda to install older versions of the requested packages in order to maintain 
+compatibility with previously installed packages. 
+Using the --freeze-installed option does not prevent additional dependency packages from being installed.
+
+# List Conda basic-scipy-env
+conda list --name basic-scipy-env
+conda list --name machine-learning-39-env
+
+# Lis† library
+conda list
+
+# Deleting Entire environment 
+conda remove --name basic-scipy-env --all
+
+# Dask : Installing a package into a specific environment
+conda activate machine-learning-39-env
+conda search dask
+conda install dask=2022.7.0
+conda install scikit-learn
+
+# We can use pip as well
+pip install streamlit
+
+What are Conda channels?
+Conda packages are downloaded from remote channels, which are URLs to directories containing conda packages. 
+The conda command searches a standard set of channels, referred to as defaults. The defaults channels include:
+
+main: The majority of all new Anaconda, Inc. package builds are hosted here. Included in defaults as the top priority channel.
+r: Microsoft R Open conda packages and Anaconda, Inc.’s R conda packages.
+
+# Search for package in channel 
+conda search --channel conda-forge kaggle
+
+# In conda if you want to use python
+python 
+exit()
+
+# Exporting environment file
+1. cmd : source activate myenv
+2. cmd : 
+cd Desktop
+conda export myenv > environment.yml
+
+# Create environment from File 
+conda env create -f environment.yml
+
+# Cloning Environment
+conda create --name myclone --clone myenv
+
+cd COM6018
+conda env create -f com6018.environment.yml
+# To activate this environment, use
+# $ conda activate com6018
