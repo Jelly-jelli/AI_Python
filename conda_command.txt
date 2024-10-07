@@ -15,8 +15,7 @@ conda activate machine-learning-39-env
 
 
 # Terminate Environment 
-conda deactivate
-conda deactivate
+conda deactivateconda deactivate
 
 # Installing Packages
 conda activate basic-scipy-env
@@ -26,7 +25,7 @@ conda install scikit-learn=1.2
 # Search Sckit learn popular version
 conda search scikit-learn
 
-# Specific the version
+# Specific theversion
 conda install ipython matplotlib=3.7 scipy=1.9
 
 # List env of Conda
@@ -86,3 +85,4 @@ cd COM6018
 conda env create -f com6018.environment.yml
 # To activate this environment, use
 # $ conda activate com6018
+
