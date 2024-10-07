@@ -1,0 +1,21 @@
+To init git repository :
+git init 
+
+List all hidden files :
+ls -a 
+
+Check status on branch : You may find untrack files (not commit yet) 
+git status
+
+you may be got 
+
+Check all git log :
+git log
+
+Add all files to stage :
+# Add all files
+git add .
+
+Commit message :
+git commit -m "Initial commit"
+
