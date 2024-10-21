@@ -24,13 +24,13 @@ jobs:
       - name: Install Jupyter Book
         run: |
           python -m pip install --upgrade pip
-          pip install jupyter-book
+          pip install jupyter-book matplotlib pandas
 
       # Step 4: Clean and build the Jupyter Book
       - name: Build Jupyter Book
         run: |
           jb clean .
-          jb build .
+          jb build . --keep-going
 
       # Step 5: Copy additional materials (lectures, etc.)
       - name: Copy additional materials
