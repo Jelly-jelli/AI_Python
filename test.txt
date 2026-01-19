@@ -1,4 +1,3 @@
 USERNAME = JELLY
 PASSWORD = JELLY
-
 Password = 12345
